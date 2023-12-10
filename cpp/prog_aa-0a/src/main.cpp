@@ -6,6 +6,7 @@
 // add wizard++
 
 #include <Arduino.h>
+#if 0
 #include <iostream>
 #include <memory>
 #include <string>
@@ -33,7 +34,13 @@ std::string json =
                 "this->OTAPassword.c_str(), this->OTAPort");
 // return json;
 
-void setup(){};
+#endif
+
+void setup(){
+    Serial.begin(115200);
+    Serial.println("hi");
+};
+
 void loop(){};
 
 // end.
