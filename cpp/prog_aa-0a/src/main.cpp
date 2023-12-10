@@ -1,7 +1,7 @@
 // main.cpp
-// Sun 10 Dec 06:01:58 UTC 2023
+// Sun 10 Dec 06:24:49 UTC 2023
 
-// zeroing in on the issue 06:01z
+// zeroing in on the issue 06:25z
 
 #include <Arduino.h>
 #include <iostream>
@@ -41,7 +41,8 @@ void slower() {
 
 void setup(){
     Serial.begin(115200);
-    Serial.println("hi");
+    Serial.print("hi   ");
+    Serial.println(" chupacabra keerflar teldu naknuk");
 };
 
 void loop(){
@@ -49,4 +50,5 @@ void loop(){
     slower();
 };
 
+// as hiked off github moments ago commit 10ba62d
 // end.
