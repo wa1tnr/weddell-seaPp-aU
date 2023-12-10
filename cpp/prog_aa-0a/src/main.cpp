@@ -31,7 +31,7 @@ std::string json =
   format_string("\"device_config\": {\"OTALogin\": \"%s\", \"OTAPassword\": "
                 "\"%s\", \"OTAPort\": \"%u\"}, this->OTALogin.c_str(), "
                 "this->OTAPassword.c_str(), this->OTAPort");
-return json;
+// return json;
 
 void setup(){};
 void loop(){};
