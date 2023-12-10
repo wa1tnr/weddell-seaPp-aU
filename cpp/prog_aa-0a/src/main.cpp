@@ -18,7 +18,7 @@ std::string format_string(const std::string& format, Args... args) {
     return "";
   }
   auto size = static_cast<size_t>(size_s);
-  // std::unique_ptr<char[]> buf(new char[size]);
+  std::unique_ptr<char[]> buf(new char[size]);
   // std::snprintf(buf.get(), size, format.c_str(), args...);
   return "";
   // return std::string(buf.get(), buf.get() + size - 1);  // We don't want the '\0' inside

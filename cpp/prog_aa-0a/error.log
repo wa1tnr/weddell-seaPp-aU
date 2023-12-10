@@ -1,0 +1,1 @@
+src/main.cpp:21:8: error: 'unique_ptr' is not a member of 'std'
