@@ -1,15 +1,17 @@
-### Sun 10 Dec 05:55:55 UTC 2023
+### Sun 10 Dec 22:55:57 UTC 2023
 
-#### Weddell Sea PP - first instance on wokwi.com
+#### Weddell Sea PP - current work
 
 new:
 
-  chew passwell
-
-  https://wokwi.com/projects/383706327147334657
+  https://wokwi.com/projects/383767710097840129
 
 
 was:
+
+  chew passwell (chupacabra, as well)
+
+  https://wokwi.com/projects/383706327147334657
 
   Forty four one seventy seven sixty six five
 
