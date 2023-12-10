@@ -1,7 +1,7 @@
 // main.cpp
-// Sun 10 Dec 06:01:58 UTC 2023
+// Sun 10 Dec 06:24:49 UTC 2023
 
-// zeroing in on the issue 06:01z
+// zeroing in on the issue 06:25z
 
 #include <Arduino.h>
 #include <iostream>
@@ -23,30 +23,21 @@ std::string format_string(const std::string &format, Args... args) {
                      buf.get() + size - 1); // We don't want the '\0' inside
 }
 
-// Example of using above function
-// to format a series of strings as a singular
-// json formatted string.
-
-#if 0
-std::string json =
-  format_string("\"device_config\": {\"OTALogin\": \"%s\", \"OTAPassword\": "
-                "\"%s\", \"OTAPort\": \"%u\"}, this->OTALogin.c_str(), "
-                "this->OTAPassword.c_str(), this->OTAPort");
-// return json;
-#endif
-
-void slower() {
-    for (volatile unsigned long c = 1239999; c > 0; c--) { }
-}
-
-void setup(){
-    Serial.begin(115200);
-    Serial.println("hi");
+void setup() {
+  Serial.begin(115200);
+  Serial.print("hi   ");
+  Serial.println(" chupacabra keerflar teldu naknuk");
 };
 
-void loop(){
-    Serial.write('¶'); // fancy that
-    slower();
+int i=0;
+void loop() {
+  String test = "this is some text content";
+  std::string json =
+    format_string("\"device_config\": {\"OTALogin\": \"%s\"}", test.c_str());
+  Serial.println(json.c_str());
+  delay(1400);
+  Serial.println(i++);
 };
 
+// as hiked off github moments ago commit 10ba62d
 // end.
