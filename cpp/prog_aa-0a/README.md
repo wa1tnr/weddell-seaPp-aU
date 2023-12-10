@@ -4,12 +4,18 @@
 
 new:
 
-  Eighteen six two five!
+  Forty four one seventy seven sixty six five
 
-  https://wokwi.com/projects/383705623864218625
+  https://wokwi.com/projects/383706109144177665
+
+  le chupe
 
 
 was:
+
+  Eighteen six two five!
+
+  https://wokwi.com/projects/383705623864218625
 
   Formula 409:
 
