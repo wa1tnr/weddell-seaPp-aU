@@ -25,13 +25,15 @@ std::string format_string(const std::string &format, Args... args) {
                      buf.get() + size - 1); // We don't want the '\0' inside
 }
 
-// Example of using above function to format a series of strings as a singular json formatted string.
- std::string json = format_string(
-      "\"device_config\": {\"OTALogin\": \"%s\", \"OTAPassword\": \"%s\", "
-      "\"OTAPort\": %u}",
-      this->OTALogin.c_str(), this->OTAPassword.c_str(), this->OTAPort);
-  return json;
- 
- void setup(){}; void loop(){};
+// Example of using above function to format a series of strings as a singular
+// json formatted string.
+std::string json = format_string(
+  "\"device_config\": {\"OTALogin\": \"%s\", \"OTAPassword\": \"%s\", "
+  "\"OTAPort\": %u}",
+  this->OTALogin.c_str(), this->OTAPassword.c_str(), this->OTAPort);
+return json;
 
- // end.
+void setup(){};
+void loop(){};
+
+// end.
