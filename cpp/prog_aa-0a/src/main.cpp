@@ -7,6 +7,7 @@
 
 #include <Arduino.h>
 #include <iostream>
+#include <memory>
 #include <string>
 
 template <typename... Args>
@@ -19,9 +20,9 @@ std::string format_string(const std::string& format, Args... args) {
   }
   auto size = static_cast<size_t>(size_s);
   std::unique_ptr<char[]> buf(new char[size]);
-  // std::snprintf(buf.get(), size, format.c_str(), args...);
-  return "";
-  // return std::string(buf.get(), buf.get() + size - 1);  // We don't want the '\0' inside
+  std::snprintf(buf.get(), size, format.c_str(), args...);
+  // return "";
+  return std::string(buf.get(), buf.get() + size - 1);  // We don't want the '\0' inside
 }
 
 // Example of using above function to format a series of strings as a singular json formatted string.
