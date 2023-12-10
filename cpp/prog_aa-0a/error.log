@@ -1,19 +1,5 @@
+Sun 10 Dec 06:19:23 UTC 2023
 
-Compiling .pio/build/esp32dev/FrameworkArduino/USBMSC.cpp.o
-src/main.cpp:32:7: error: invalid use of 'this' at top level
-       this->OTALogin.c_str(), this->OTAPassword.c_str(), this->OTAPort);
-       ^~~~
-src/main.cpp:32:31: error: invalid use of 'this' at top level
-       this->OTALogin.c_str(), this->OTAPassword.c_str(), this->OTAPort);
-                               ^~~~
-src/main.cpp:32:58: error: invalid use of 'this' at top level
-       this->OTALogin.c_str(), this->OTAPassword.c_str(), this->OTAPort);
-                                                          ^~~~
-src/main.cpp:33:3: error: expected unqualified-id before 'return'
-   return json;
-   ^~~~~~
-Compiling .pio/build/esp32dev/FrameworkArduino/WMath.cpp.o
-*** [.pio/build/esp32dev/src/main.cpp.o] Error 1
-================================================= [FAILED] Took 0.88 seconds =================================================
-make: *** [Makefile:6: all] Error 1
-Sun 10 Dec 04:45:31 UTC 2023
+rescinded - not tracking this at the moment.
+
+end.
