@@ -33,7 +33,26 @@ int i=0;
 void loop() {
   String test = "this is some text content";
   std::string json =
-    format_string("\"device_config\": {\"OTALogin\": \"%s\"}", test.c_str());
+    format_string("\"device_config\": {\"OTALogin\": \"%s\"}", // can add comment
+// comment okay
+    test.c_str());
+
+// may have added comments inside a quoted string,
+// during early troubleshooting of the Challenge
+// YES .. AND! .. it forces the common error seen for
+// a few hours of code-examination and trial.
+// This error is a red herring and mostly says
+// that a quoted string cannot have anything
+// strange inside it - off limits for comments and
+// stray syntax oddities.
+
+// Something along those lines.
+
+// the comma field boundaries are fine for whitespace,
+// multiple blank lines, comments &c.
+
+// this is a BINGO moment fwiw. ;)
+
   Serial.println(json.c_str());
   delay(1400);
   Serial.println(i++);
