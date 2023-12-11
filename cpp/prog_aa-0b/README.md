@@ -1,13 +1,17 @@
-### Sun 10 Dec 22:55:57 UTC 2023
+### Mon 11 Dec 00:36:42 UTC 2023
 
 #### Weddell Sea PP - current work
 
+Has 2nd program now (exact copy of the first program).
+
 new:
 
-  https://wokwi.com/projects/383767710097840129
+  https://wokwi.com/projects/383769040663224321
 
 
 was:
+
+  https://wokwi.com/projects/383767710097840129
 
   chew passwell (chupacabra, as well)
 
